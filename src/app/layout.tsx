@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "GridSite Vendor Portal - Join Our Data Center Buildout Ecosystem",
-  description: "Partner with GridSite's ComputeComplete platform and become part of a streamlined ecosystem that's revolutionizing how data centers are built and operated.",
+          description: "Partner with GridSite&apos;s ComputeComplete platform and become part of a streamlined ecosystem that&apos;s revolutionizing how data centers are built and operated.",
 };
 
 export default function RootLayout({

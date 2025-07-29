@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Badge } from "@/components/ui/badge";
+;
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
@@ -41,7 +41,7 @@ export default function VendorLandingPage() {
     centralizedToolsList: ""
   });
 
-  const handleInputChange = (field: string, value: any) => {
+  const handleInputChange = (field: string, value: string | number | boolean | string[]) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
@@ -112,7 +112,7 @@ export default function VendorLandingPage() {
               Join the Future of Data Center Buildout and Operations
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Become a vendor partner with GridSite's ComputeComplete platform - a streamlined ecosystem that's revolutionizing how data centers are built and operated.
+              Become a vendor partner with GridSite&apos;s ComputeComplete platform - a streamlined ecosystem that&apos;s revolutionizing how data centers are built and operated.
             </p>
             <div className="flex gap-4 justify-center">
               <Button 
@@ -149,7 +149,7 @@ export default function VendorLandingPage() {
             </h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-xl text-gray-600 leading-relaxed">
-              <span className="text-blue-600 font-semibold"> ComputeComplete </span> is GridSite's integrated development and operations management platform that <span className="text-blue-600 font-semibold"> creates a network of pre-vetted vendors</span> to <span className="text-blue-600 font-semibold">active projects</span>.
+              <span className="text-blue-600 font-semibold"> ComputeComplete </span> is GridSite&apos;s integrated development and operations management platform that <span className="text-blue-600 font-semibold"> creates a network of pre-vetted vendors</span> to <span className="text-blue-600 font-semibold">active projects</span>.
               </p>
               
               <p className="text-xl text-gray-600 leading-relaxed">
@@ -275,7 +275,7 @@ export default function VendorLandingPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 leading-relaxed">
-                <span className="font-semibold text-purple-600"> RFPs arrive 80% complete</span> — thanks to GridSite's in-house site validation. <span className="font-semibold text-purple-600">Centralized project management</span> and <span className="font-semibold text-purple-600">shared vendor communication channels</span> keep all parties aligned.
+                <span className="font-semibold text-purple-600"> RFPs arrive 80% complete</span> — thanks to GridSite&apos;s in-house site validation. <span className="font-semibold text-purple-600">Centralized project management</span> and <span className="font-semibold text-purple-600">shared vendor communication channels</span> keep all parties aligned.
                 </p>
               </CardContent>
             </Card>
@@ -356,7 +356,7 @@ export default function VendorLandingPage() {
               Vendor Qualification Survey
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Tell us about your capabilities and let's explore how we can work together.
+              Tell us about your capabilities and let&apos;s explore how we can work together.
             </p>
           </div>
 
@@ -366,7 +366,7 @@ export default function VendorLandingPage() {
                 Vendor Application Form
               </CardTitle>
               <CardDescription className="text-gray-600">
-                Complete this form to be considered for GridSite's vendor network. 
+                Complete this form to be considered for GridSite&apos;s vendor network. 
                 All information will be kept confidential.
               </CardDescription>
             </CardHeader>
