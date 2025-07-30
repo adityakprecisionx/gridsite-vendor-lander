@@ -51,8 +51,8 @@ export default function TermsOfServicePage() {
                   <strong>Effective Date:</strong> July 21, 2025
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Welcome to GridSite Technology ("GridSite," "we," "our," or "us"). These Terms of
-                  Service ("Terms") govern your use of our vendor portal and digital infrastructure
+                  Welcome to GridSite Technology (&quot;GridSite,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). These Terms of
+                  Service (&quot;Terms&quot;) govern your use of our vendor portal and digital infrastructure
                   marketplace platform. By accessing or using our platform, you agree to be bound by these
                   Terms.
                 </p>
@@ -171,11 +171,11 @@ export default function TermsOfServicePage() {
                 <ul className="mb-6 list-disc space-y-2 pl-6">
                   <li>Provide false, misleading, or fraudulent information</li>
                   <li>Use the platform for any illegal or unauthorized purposes</li>
-                  <li>Attempt to gain unauthorized access to our systems or other users' accounts</li>
-                  <li>Interfere with or disrupt the platform's functionality</li>
+                  <li>Attempt to gain unauthorized access to our systems or other users&apos; accounts</li>
+                  <li>Interfere with or disrupt the platform&apos;s functionality</li>
                   <li>Use automated tools to scrape or harvest data from the platform</li>
                   <li>Bypass any measures we may use to prevent or restrict access</li>
-                  <li>Use the platform to compete directly with GridSite's services</li>
+                  <li>Use the platform to compete directly with GridSite&apos;s services</li>
                   <li>Transmit viruses, malware, or other harmful code</li>
                 </ul>
               </section>
@@ -329,7 +329,7 @@ export default function TermsOfServicePage() {
                   Service Disclaimers
                 </h3>
                 <p className="mb-4 leading-relaxed">
-                  OUR PLATFORM IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND.
+                  OUR PLATFORM IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND.
                   WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
                   WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
                 </p>
@@ -435,8 +435,8 @@ export default function TermsOfServicePage() {
                 </h2>
                 <p className="mb-6 leading-relaxed">
                   We reserve the right to modify these Terms at any time. We will notify users of
-                  material changes by posting updated Terms on our website and updating the "Effective
-                  Date." Your continued use of the platform after such changes constitutes acceptance of
+                  material changes by posting updated Terms on our website and updating the &quot;Effective
+                  Date.&quot; Your continued use of the platform after such changes constitutes acceptance of
                   the modified Terms.
                 </p>
               </section>

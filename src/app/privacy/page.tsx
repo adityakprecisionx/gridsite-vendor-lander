@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
                   <strong>Effective Date:</strong> July 21, 2025
                 </p>
                 <p className="text-lg leading-relaxed">
-                  GridSite Technology ("GridSite," "we," "our," or "us") respects your privacy and is
+                  GridSite Technology (&quot;GridSite,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is
                   committed to protecting your personal information. This Privacy Policy explains
                   how we collect, use, disclose, and safeguard your information when you visit our vendor portal
                   and apply to join our digital infrastructure marketplace platform.
@@ -278,7 +278,7 @@ export default function PrivacyPolicyPage() {
 
               <section>
                 <h2 className="mb-4 text-2xl font-semibold text-blue-800 pb-2">
-                  10. Children's Privacy
+                  10. Children&apos;s Privacy
                 </h2>
                 <p className="mb-6 leading-relaxed">
                   Our services are not intended for individuals under the age of 18. We do not
@@ -295,7 +295,7 @@ export default function PrivacyPolicyPage() {
                 <p className="mb-6 leading-relaxed">
                   We may update this Privacy Policy from time to time to reflect changes in our practices
                   or applicable laws. We will notify you of any material changes by posting the updated
-                  policy on our website and updating the "Effective Date" at the top of this policy.
+                  policy on our website and updating the &quot;Effective Date&quot; at the top of this policy.
                   Your continued use of our services after such changes constitutes acceptance of the
                   updated Privacy Policy.
                 </p>

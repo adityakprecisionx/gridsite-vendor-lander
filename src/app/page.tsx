@@ -10,7 +10,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function VendorLandingPage() {
   const [formData, setFormData] = useState({
