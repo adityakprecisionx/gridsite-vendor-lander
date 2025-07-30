@@ -176,7 +176,7 @@ export default function VendorLandingPage() {
               </svg>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 to-blue-800 bg-clip-text text-transparent mb-4 pb-2">
-              What is ComputeComplete?
+              What is GridSite&apos;s ComputeComplete?
             </h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-xl text-gray-600 leading-relaxed">
