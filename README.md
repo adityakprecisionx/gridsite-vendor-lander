@@ -38,6 +38,7 @@ This landing page serves as a comprehensive portal for data center buildout vend
 - Quality assessment (completed projects, reviews)
 - Platform integration preferences
 - Requirements and expectations
+- **Form Submission**: Sends JSON payload to webhook endpoint for processing
 
 ## Technology Stack
 
@@ -46,7 +47,8 @@ This landing page serves as a comprehensive portal for data center buildout vend
 - **Styling**: Tailwind CSS
 - **UI Components**: ShadCN UI
 - **Form Handling**: React state management
-- **Deployment**: Ready for Vercel deployment
+- **API Integration**: Webhook submission to n8n workflow
+- **Deployment**: Ready for Netlify deployment
 
 ## Getting Started
 
@@ -67,12 +69,18 @@ cd gridsite-vendor-lander
 npm install
 ```
 
-3. Run the development server:
+3. Set up environment variables:
+```bash
+# Create a .env.local file with your webhook authentication key
+NEXT_PUBLIC_WEBHOOK_AUTH=your_webhook_auth_key_here
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ### Available Scripts
 
@@ -81,6 +89,27 @@ npm run dev
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 - `npm run type-check` - Run TypeScript type checking
+
+## Deployment
+
+### Netlify Deployment
+
+1. **Connect your GitHub repository** to Netlify
+2. **Set environment variables** in Netlify:
+   - Go to Site Settings → Environment Variables
+   - Add: `NEXT_PUBLIC_WEBHOOK_AUTH` = `your_webhook_auth_key_here`
+3. **Deploy settings**:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+   - Node version: 18 (or higher)
+
+### Environment Variables
+
+The application requires the following environment variable:
+
+- `NEXT_PUBLIC_WEBHOOK_AUTH`: Authentication key for the webhook endpoint
+
+**Note**: Since this is a client-side application, the environment variable is prefixed with `NEXT_PUBLIC_` to make it available in the browser. This means the authentication key will be visible in the client-side code. For production use, consider implementing server-side form handling for better security.
 
 ## Project Structure
 

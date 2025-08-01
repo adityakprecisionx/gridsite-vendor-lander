@@ -48,11 +48,66 @@ export default function VendorLandingPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your interest! We'll be in touch soon.");
+    
+    console.log('Client: Form data being sent:', formData);
+    
+    try {
+      console.log('Client: Making request to local API route');
+      
+      const response = await fetch('/api/submit-vendor', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      console.log('Client: Response status:', response.status);
+      console.log('Client: Response status text:', response.statusText);
+
+      const result = await response.json();
+      console.log('Client: Response data:', result);
+
+      if (response.ok && result.success) {
+        alert("Thank you for your interest! We'll be in touch soon.");
+        // Reset form
+        setFormData({
+          companyName: "",
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          website: "",
+          vendorTypes: [],
+          regions: [],
+          capabilities: [],
+          availability: "",
+          projectsLastYear: "",
+          completedProjects: "",
+          platformIntegrations: "",
+          openToCentralizing: false,
+          requirements: "",
+          agreeToTerms: false,
+          licensingStatus: "",
+          certifications: "",
+          averageProjectSize: "",
+          maxProjectCapacity: "",
+          digitalDelivery: "",
+          centralizedTools: "",
+          centralizedToolsList: ""
+        });
+      } else {
+        console.error('Client: Submission failed:', result);
+        alert(`Submission failed: ${result.error || 'Unknown error'}. Check console for details.`);
+      }
+    } catch (error) {
+      console.error('Client: Network/Request error:', error);
+      console.error('Client: Error type:', error instanceof Error ? error.constructor.name : typeof error);
+      console.error('Client: Error message:', error instanceof Error ? error.message : String(error));
+      alert(`Network error: ${error instanceof Error ? error.message : 'Unknown error'}. Check console for details.`);
+    }
   };
 
   return (
