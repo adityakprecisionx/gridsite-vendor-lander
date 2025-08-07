@@ -315,7 +315,7 @@ export default function VendorLandingPage() {
                   </svg>
                 </div>
                 <h3 className="text-3xl font-bold text-blue-800 mb-3">Vendor Network</h3>
-                <p className="text-lg text-gray-600 mb-6">White-label partnership for recurring work</p>
+                <p className="text-lg text-gray-600 mb-6">Network for recurring work sourced by GridSite</p>
               </div>
               
                               <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/30 mb-8">
